@@ -215,6 +215,7 @@ class LineWrapper extends EventEmitter
 
       @document.addPage()
       @column = 1
+      @startX = @document.page.margins.left
       @startY = @document.page.margins.top
       @maxY = @document.page.maxY()
       @document.x = @startX
