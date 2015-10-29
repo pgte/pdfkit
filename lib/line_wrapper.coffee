@@ -217,7 +217,6 @@ class LineWrapper extends EventEmitter
       @column = 1
       @startY = @document.page.margins.top
       @maxY = @document.page.maxY()
-      @startX = @document.page.margins.left
       @document.x = @startX
       @document.fillColor @document._fillColor... if @document._fillColor
       @emit 'pageBreak', options, this
